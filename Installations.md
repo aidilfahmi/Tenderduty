@@ -117,3 +117,5 @@ sudo systemctl enable tenderduty
 sudo systemctl daemon-reload
 sudo systemctl restart tenderduty && sudo journalctl -fu tenderduty -o cat
 ```
+Open on your browser
+http://IP-Address:8888
