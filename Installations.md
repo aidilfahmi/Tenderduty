@@ -58,11 +58,11 @@ Create `chains.id` directory
 ```css
 mkdir chains.d
 ```
-Create Your chain `yml` files to be monitored. Here is example im creating `planq.yml`, edit it according to your configurations.
+Create Your chain `yml` files to be monitored. Here is example i'm creating `planq.yml`, edit it according to your configurations.
 ```css
 tee ./chains.d/planq.yml > /dev/null << EOF
-    chain_id: planq_7070-2
-    valoper_address: plqvaloper1kk4j6t8gsd6t3x2l8pgpa5hee2nw3xrlfqah
+    chain_id: planq_7070-2                                                      # Chain ID
+    valoper_address: plqvaloper1kk4j6t8gsd6t3x2l8pgpa5hee2nw3xrlfqah            # Your Valoper Address
     public_fallback: no
 
     alerts:
@@ -80,8 +80,8 @@ tee ./chains.d/planq.yml > /dev/null << EOF
       # Telegram settings
       telegram:
         enabled: yes                                              
-        api_key: "12345678910:BCH-Lwkth-mOJKFladfw9od-0TF6Mtg"              # BOT TOKEN
-        channel: "-100144352435243"                                         # Channerl ID
+        api_key: ""              # BOT TOKEN, Leave it if you wont configure it
+        channel: ""              # Channel ID
 
     nodes:
       - url: https://rpc.planq.network:443
