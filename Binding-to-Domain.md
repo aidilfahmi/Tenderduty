@@ -15,7 +15,7 @@ sudo nano /etc/nginx/sites-enabled/status.dnsarz.xyz
 - Insert this code and change `server_name` with your own.
 ```javascript
 server {
-    server_name server.dnsarz.xyz;
+    server_name status.dnsarz.xyz;
     listen 80;
     location / {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
